@@ -35,14 +35,28 @@ li {
     flex: 1;
 }
 
+.container {
+    padding: 50px 0;
+}
+
+
 .row {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.text-purple {
+.text--purple {
     color: #6030b1;
+}
+
+section:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.section__title {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* all above are "his" recommended default settings */
@@ -104,6 +118,7 @@ nav {
 }
 
 .about-me__info--container {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +126,57 @@ nav {
     margin: 0 auto;
     text-align: center;
 }
+
+.about-me__img {
+    width: 100%;
+}
+
+/* TECH - STACK */
+
+.language__img {
+    width: 100%;
+    max-width: 100px;
+    transition: all 300ms;
+}
+
+/* hover as you approach the image not just over the image */
+.language:hover .language__img {
+    filter: brightness (80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+
+.language__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.language__name {
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.language:hover .language__name {
+    transform: scale(1);
+    opacity: 1;
 
 .about-me__picture--mask {
     width: 135px;
