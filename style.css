@@ -20,7 +20,8 @@ h1 {
 
 p {
     line-height: 1.0;
-    font-size: 10px;
+    font-size: 20px;
+    padding: 16px;
 }
 
 li {
@@ -125,6 +126,7 @@ nav {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .about-me__img {
