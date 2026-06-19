@@ -91,7 +91,8 @@ section:nth-child(even) {
 
 .section__title {
     margin-bottom: 20px;
-   /* text-align: center; I think it has to have it, lets see*/
+    text-align: center; 
+   /* I think it has to have it, lets see*/
 }
 
 /* all above are "his" recommended default settings */
@@ -175,7 +176,7 @@ nav {
 /* hover as you approach the image not just over the image */
 .language:hover .language__img {
     filter: brightness (80%);
-    opacity: 0.86;
+    opacity: 1;
     transform: scale(0.9);
 }
 
@@ -227,6 +228,7 @@ nav {
    transition: all 500ms ease;
 }
 
+ /* df places the image w/in the wrapper */
 .project__wrapper {
     display: flex;
     box-shadow: 0 20px 80px rgba(0,0,0,0.45);
@@ -250,7 +252,7 @@ nav {
 }
 
 .project:hover .project__wrapper:before {
-    opacity: 0.5;
+    opacity: 0.7;
     transform: translateY(0);
 }
 
@@ -271,7 +273,7 @@ nav {
 .project__description {
     position: absolute;
     top: 50%;
-    transform: translateY(-100%); 
+    transform: translateY(100%); 
     left: 90px;
     max-width: 550px;
     z-index: 3;
@@ -344,8 +346,59 @@ nav {
     justify-content: center;
 }
 
+   /*  max-width: 400px; */
 .about-me__img {
     width: 100%;
-   /*  max-width: 400px; */
-   animation: fade-in 12100ms 800ms backwards;
+    animation: fade-in 12100ms 800ms backwards;
 }
+
+/* FOOTER */
+
+.footer {
+    background-color: #242424;
+}
+
+.footer__logo--img {
+    width: 70px;
+    height: 70px;
+}
+.footer__social--list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 0;
+}
+/*
+        <a href="https://www.google.com" target="_blank" class="
+        footer__social--link
+        link__hover-effect
+        link__hover-effect--white
+        " target="_blank">Github</a>
+
+        <a href="https://www.google.com" target="_blank" class="
+        footer__social--link
+        link__hover-effect
+        link__hover-effect--white
+        " target="_blank">Linkedin</a>
+
+        <a href="mailto:email@email.com" target="_blank" class="
+        footer__social--link
+        link__hover-effect
+        link__hover-effect--white
+        " target="_blank">Email</a>
+
+        <a href="./assets/Example Resume.pdf" target="_blank" class="
+        footer__social--link
+        link__hover-effect
+        link__hover-effect--white
+        " target="_blank" download="">Resume</a>
+        */
