@@ -332,9 +332,9 @@ nav {
 .about-me__link {
     font-size: 20px;
     color: #242424;
-    /* text-decoration: none; */
     padding: 0 16px;
 }
+  /* text-decoration: none; */
 
 .about-me__links {
     animation: fade-up 650ms 800ms backwards;
@@ -354,22 +354,20 @@ nav {
 
 /* FOOTER */
 
-.footer {
+footer {
     background-color: #242424;
 }
-
 .footer__logo--img {
     width: 70px;
-    height: 70px;
+    height: 50px;
 }
 .footer__social--list {
     width: 100%;
     max-width: 500px;
     display: flex;
-    justify-content: space-around;
     margin-bottom: 28px;
+    justify-content: space-around;
 }
-
 .footer__row {
     display: flex;
     flex-direction: column;
@@ -377,28 +375,28 @@ nav {
     justify-content: center;
     padding: 8% 0;
 }
-/*
-        <a href="https://www.google.com" target="_blank" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-        " target="_blank">Github</a>
 
-        <a href="https://www.google.com" target="_blank" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-        " target="_blank">Linkedin</a>
+.footer__social--link,
+.footer__copyright,
+.footer__logo--popper {
+    color: #FFF;
+}
 
-        <a href="mailto:email@email.com" target="_blank" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-        " target="_blank">Email</a>
+.footer__logo--popper {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 700;
+    opacity: 0.3;
+    transition: all 300ms ease;
+}
 
-        <a href="./assets/Example Resume.pdf" target="_blank" class="
-        footer__social--link
-        link__hover-effect
-        link__hover-effect--white
-        " target="_blank" download="">Resume</a>
-        */
+.footer__anchor {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer__anchor:hoover .footer__logo--popper {
+    transform: translateX(60px);
+    opacity: 1;
+}
