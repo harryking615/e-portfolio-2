@@ -49,6 +49,7 @@ i:hover {
 .link__hover-effect--white:after {
     background-color: #FFF;
 }
+
 .link__hover-effect--black:after {
     background-color: #000;
 }
@@ -92,7 +93,7 @@ section:nth-child(even) {
 
 .section__title {
     margin-bottom: 20px;
-    text-align: center; 
+    /* text-align: center;  */
    /* I think it has to have it, lets see*/
 }
 
@@ -108,7 +109,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding
+    padding: 0 12px
 }
 
 .nav__link--list {
@@ -153,11 +154,10 @@ nav {
 }
 .about-me__info {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .about-me__info--container {
- /*   flex: 1;  mine only */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,8 +177,8 @@ nav {
 
 /* hover as you approach the image not just over the image */
 .language:hover .language__img {
-    filter: brightness (86%);
-    opacity: 1;
+    filter: brightness (80%);
+    opacity: 0.86;
     transform: scale(0.9);
 }
 
@@ -315,10 +315,9 @@ nav {
 }
 
 .about-me__picture {
-    width: 130%;
-    /* improving his own picture */
+    width: 100%;
     transform: scale(1.5);
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 .about-me__info--para {
@@ -336,7 +335,6 @@ nav {
     color: #242424;
     padding: 0 16px;
 }
-  /* text-decoration: none; */
 
 .about-me__links {
     animation: fade-up 650ms 800ms backwards;
@@ -412,7 +410,7 @@ footer {
 }
 .footer__logo--img {
     width: 70px;
-    height: 50px;
+    height: 70px;
 }
 .footer__social--list {
     width: 100%;
@@ -438,9 +436,9 @@ footer {
 .footer__logo--popper {
     position: absolute;
     right: 0;
-    top: 30px;
+    top: -20px;    
     font-weight: 700;
-    opacity: 0.3;
+    opacity: 1;
     transition: all 300ms ease;
 }
 
@@ -452,4 +450,41 @@ footer {
 .footer__anchor:hoover .footer__logo--popper {
     transform: translateX(60px);
     opacity: 1;
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+  .nav__link:not(:last-child) {
+    display: none;
+  }
+
+  .project__wrapper {
+    border-radius: 0;
+  }
+
+  .project__description {
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .project__description--para {
+    display: none;
+  }
+
+  .project__description--links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project__description--title {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .project__description--sub-title {
+    text-align: center;
+    margin: 12px 0;
+  }
 }
