@@ -194,6 +194,9 @@ nav {
     align-items: center;
     padding: 25px 16px;
 }
+.language__img--wrapper-html {
+    transform: scale(1.4);
+}
 
 .language__list {
     display: flex;
@@ -315,8 +318,8 @@ nav {
 }
 
 .about-me__picture {
-    width: 100%;
-    transform: scale(1.5);
+    width: 110%;
+    transform: scale(1.39);
     padding-top: 8px;
 }
 
@@ -344,6 +347,7 @@ nav {
     flex: 1;
     display: flex;
     justify-content: center;
+    margin: 10px 0 0 0 ;
 }
 
    /*  max-width: 400px; */
